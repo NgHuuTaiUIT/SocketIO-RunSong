@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.1.3:3000');
+var socket = io.connect('https://radio-server-uit.herokuapp.com');
 //var socket = io.connect('http://localhost:8000/');
 socket.on('connect', function (data) {
     socket.emit('join', 'Hello server from client');
